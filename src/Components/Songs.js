@@ -1,12 +1,11 @@
 import React,{img} from "react";
-import {BlindingLights} from "../img/Blinding Lights.mp3"
 const Songs = [
   {
     id: 1,
     favourite: false,
     songName: "Blinding Lights",
     artist: "The Weeknd",
-    song: "gs://spotify-bff83.appspot.com/Blinding Lights.mp3",
+    song: "./Blinding Lights.mp3",
     imgSrc:"https://i.pinimg.com/originals/49/47/ea/4947ea4f2af69d22b21411506d2eddf8.jpg",
   },
   {

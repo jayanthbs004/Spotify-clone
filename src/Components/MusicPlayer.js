@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/MusicPlayer.css";
+import blindingLights from "./Blinding Lights.mp3"
 import {
   FaRegHeart,
   FaHeart,
@@ -92,7 +93,7 @@ function MusicPlayer({ song, imgSrc, auto }) {
         <img src={imgSrc} alt="" />
       </div>
       <div className="songAttributes">
-        <audio src={song} preload="metadata" ref={audioPlayer} />
+        <audio src={blindingLights} preload="metadata" ref={audioPlayer} />
 
         <div className="top">
           <div className="left">
