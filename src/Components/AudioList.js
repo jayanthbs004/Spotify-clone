@@ -6,7 +6,7 @@ import { Songs } from "./Songs";
 
 function AudioList() {
   const [songs, setSongs] = useState(Songs);
-  const [song, setSong] = useState(songs[0].song);
+  const [song, setSong] = useState(songs[0].songName);
   const [img, setImage] = useState(songs[0].imgSrc);
   const [auto, setAuto] = useState(false);
 
@@ -39,7 +39,7 @@ function AudioList() {
   return (
     <div className="AudioList">
       <h2 className="title">
-        The list <span>12 songs</span>
+        The list <span>10 songs</span>
       </h2>
 
       <div className="songsContainer">
@@ -48,7 +48,7 @@ function AudioList() {
             <div
               className="songs"
               key={song?.id}
-              onClick={() => setMainSong(song?.song, song?.imgSrc)}
+              onClick={() => setMainSong(song?.songName, song?.imgSrc)}
             >
               <div className="count">
                 <p>{`#${index + 1}`}</p>

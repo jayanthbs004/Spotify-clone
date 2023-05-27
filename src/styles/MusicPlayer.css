@@ -100,7 +100,7 @@
   outline: none;
   appearance: none;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(182, 192, 182);
 }
 
 /* Chrome & Safari */
@@ -110,7 +110,7 @@
   content: "";
   top: 0;
   left: 0;
-  background: #848484;
+  background: #55ff00;
   width: var(--played-width);
   height: 100%;
   border-radius: 10px;

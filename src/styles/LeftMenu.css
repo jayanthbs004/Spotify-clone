@@ -75,7 +75,7 @@
 }
 
 .menuContainer p {
-  color: #848484;
+  color: #ffffff;
   font-size: 12px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -96,7 +96,7 @@
 
 .menuContainer ul li a {
   text-decoration: none;
-  color: #848484;
+  color: #ffffff;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -120,7 +120,7 @@
 
 .menuContainer ul li:hover a,
 .menuContainer ul li.active a {
-  color: #f1f1f1;
+  color: #06ff06;
   transition: 0.3s;
 }
 
@@ -139,7 +139,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #848484;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -150,7 +150,7 @@
 
 .playListContainer .nameContainer i {
   cursor: pointer;
-  color: #f1f1f1;
+  color: #5cff05;
 }
 
 .playListContainer .playListScroll {
@@ -163,12 +163,12 @@
 .playListContainer .playListScroll .playLists {
   display: flex;
   align-items: center;
-  color: #848484;
+  color: #ffffff;
   margin: 10px 0;
 }
 
 .playListContainer .playListScroll .playLists:hover {
-  color: #f1f1f1;
+  color: #11ff00;
   transition: all 0.3s;
 }
 

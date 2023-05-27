@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/MusicPlayer.css";
-import blindingLights from "./Blinding Lights.mp3"
 import {
   FaRegHeart,
   FaHeart,
@@ -17,6 +16,7 @@ import { BsDownload } from "react-icons/bs";
 function MusicPlayer({ song, imgSrc, auto }) {
   const [isLove, setLove] = useState(false);
   const [isPlaying, setPlay] = useState(false);
+  const [soundFile,setSoundFile] =useState("")
   //   duration state
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrenttime] = useState(0);
@@ -87,13 +87,20 @@ function MusicPlayer({ song, imgSrc, auto }) {
     setLove(!isLove);
   };
 
+  useEffect(()=>{
+    async function importFile() {
+      const file = await import(`../assets/${song}.mp3`);
+      setSoundFile(file.default); // <==========
+    }
+    importFile();
+  },[song])
   return (
     <div className="musicPlayer">
       <div className="songImage">
         <img src={imgSrc} alt="" />
       </div>
       <div className="songAttributes">
-        <audio src={blindingLights} preload="metadata" ref={audioPlayer} />
+        <audio src={soundFile} preload="metadata" ref={audioPlayer} />
 
         <div className="top">
           <div className="left">
